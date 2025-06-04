@@ -22,7 +22,7 @@ export default function AboutPage() {
       </motion.div>
 
       {/* Company Story */}
-      <section className="grid lg:grid-cols-2 gap-12 items-center">
+      <section className="max-w-4xl mx-auto">
         <motion.div
           initial={{ opacity: 0, x: -20 }}
           whileInView={{ opacity: 1, x: 0 }}
@@ -40,30 +40,13 @@ export default function AboutPage() {
             </p>
             <p>
               Our platform combines cutting-edge technology with traditional lottery excitement, offering players a
-              modern way to participate in Australia&apos;s favorite lottery games. From Oz Lotto to Powerball, we
-              provide access to all major Australian lotteries.
+              modern way to participate in Australia's favorite lottery games. We provide access to all major Australian
+              lottery formats with secure and reliable service.
             </p>
             <p>
               With thousands of satisfied customers and millions in prizes awarded, we continue to grow as
               Australia&apos;s premier online lottery destination.
             </p>
-          </div>
-        </motion.div>
-
-        <motion.div
-          initial={{ opacity: 0, x: 20 }}
-          whileInView={{ opacity: 1, x: 0 }}
-          transition={{ duration: 0.5 }}
-          viewport={{ once: true }}
-          className="relative"
-        >
-          <div className="absolute -inset-1 bg-gradient-to-r from-pink-500 via-purple-500 to-cyan-500 rounded-2xl blur-xl opacity-70"></div>
-          <div className="relative bg-black rounded-xl overflow-hidden border border-gray-800">
-            <img
-              src="/placeholder.svg?height=400&width=600"
-              alt="BigSweetDream Office"
-              className="w-full h-64 object-cover"
-            />
           </div>
         </motion.div>
       </section>
@@ -234,11 +217,11 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* Contact Information */}
+      {/* About Our Team */}
       <section>
         <div className="text-center mb-12">
           <h2 className="text-3xl font-bold mb-4 bg-clip-text text-transparent bg-gradient-to-r from-pink-500 via-purple-500 to-cyan-500">
-            Get in Touch
+            About Our Team
           </h2>
           <div className="w-24 h-1 bg-gradient-to-r from-pink-500 to-cyan-500 mx-auto"></div>
         </div>
@@ -264,13 +247,15 @@ export default function AboutPage() {
                 strokeLinejoin="round"
                 className="text-white"
               >
-                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
-                <polyline points="22,6 12,13 2,6" />
+                <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2" />
+                <circle cx="9" cy="7" r="4" />
+                <path d="M22 21v-2a4 4 0 0 0-3-3.87" />
+                <path d="M16 3.13a4 4 0 0 1 0 7.75" />
               </svg>
             </div>
-            <h3 className="text-xl font-bold text-white mb-2">Email Support</h3>
-            <p className="text-gray-300 mb-2">support@bigsweetdream.com</p>
-            <p className="text-sm text-gray-400">24/7 Customer Support</p>
+            <h3 className="text-xl font-bold text-white mb-2">Expert Team</h3>
+            <p className="text-gray-300 mb-2">50+ Professionals</p>
+            <p className="text-sm text-gray-400">Dedicated lottery specialists</p>
           </motion.div>
 
           <motion.div
@@ -293,12 +278,13 @@ export default function AboutPage() {
                 strokeLinejoin="round"
                 className="text-white"
               >
-                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
+                <path d="M12 2v20" />
+                <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6" />
               </svg>
             </div>
-            <h3 className="text-xl font-bold text-white mb-2">Phone Support</h3>
-            <p className="text-gray-300 mb-2">1800 LOTTERY</p>
-            <p className="text-sm text-gray-400">Mon-Fri 9AM-6PM AEST</p>
+            <h3 className="text-xl font-bold text-white mb-2">Years of Experience</h3>
+            <p className="text-gray-300 mb-2">15+ Years</p>
+            <p className="text-sm text-gray-400">Industry leadership</p>
           </motion.div>
 
           <motion.div
@@ -326,7 +312,7 @@ export default function AboutPage() {
               </svg>
             </div>
             <h3 className="text-xl font-bold text-white mb-2">Office Location</h3>
-            <p className="text-gray-300 mb-2">Sydney, NSW</p>
+            <p className="text-gray-300 mb-2">Melbourne, VIC</p>
             <p className="text-sm text-gray-400">Australia</p>
           </motion.div>
         </div>

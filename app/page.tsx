@@ -174,9 +174,13 @@ export default function Home() {
             className="text-center mb-12"
           >
             <h2 className="text-3xl md:text-4xl font-bold mb-4 bg-clip-text text-transparent bg-gradient-to-r from-pink-500 via-purple-500 to-cyan-500 font-montserrat">
-              About Our Platform
+              About BigSweetDream Platform
             </h2>
             <div className="w-24 h-1 bg-gradient-to-r from-pink-500 to-cyan-500 mx-auto"></div>
+            <p className="text-gray-300 max-w-2xl mx-auto mt-4">
+              BigSweetDream offers Australia's premier lottery experience with cutting-edge technology and unmatched
+              security.
+            </p>
           </motion.div>
 
           <div className="grid md:grid-cols-3 gap-8">
@@ -206,8 +210,8 @@ export default function Home() {
               </div>
               <h3 className="text-xl font-bold text-white mb-2 font-montserrat">Licensed Operator</h3>
               <p className="text-gray-300">
-                We are a fully licensed lottery operator in Australia, providing secure and transparent lottery
-                services.
+                We are a fully licensed lottery operator in Australia, providing secure and transparent lottery services
+                through our state-of-the-art digital platform that ensures fair play and instant results.
               </p>
             </motion.div>
 
@@ -237,6 +241,7 @@ export default function Home() {
               <h3 className="text-xl font-bold text-white mb-2 font-montserrat">Secure Platform</h3>
               <p className="text-gray-300">
                 Your data and transactions are protected with the latest security measures and encryption technology.
+                Our platform uses advanced SSL encryption and secure payment gateways to ensure complete safety.
               </p>
             </motion.div>
 
@@ -418,7 +423,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Historical Wins */}
+      {/* Our Platform Features */}
       <section className="py-16 bg-gradient-to-b from-purple-950/20 to-transparent">
         <div className="container mx-auto px-4">
           <motion.div
@@ -429,25 +434,162 @@ export default function Home() {
             className="text-center mb-12"
           >
             <h2 className="text-3xl md:text-4xl font-bold mb-4 bg-clip-text text-transparent bg-gradient-to-r from-pink-500 via-purple-500 to-cyan-500 font-montserrat">
-              Historical Wins
+              Why Choose BigSweetDream?
             </h2>
             <div className="w-24 h-1 bg-gradient-to-r from-pink-500 to-cyan-500 mx-auto mb-4"></div>
-            <p className="text-gray-300 max-w-2xl mx-auto">
-              Discover the biggest wins in Australian lottery history and see what&apos;s possible.
+            <p className="text-gray-300 max-w-3xl mx-auto text-lg">
+              Experience the future of lottery gaming with our cutting-edge platform designed for modern players who
+              demand security, convenience, and transparency.
             </p>
           </motion.div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div className="grid lg:grid-cols-2 gap-12 items-center mb-16">
+            <motion.div
+              initial={{ opacity: 0, x: -20 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.5 }}
+              viewport={{ once: true }}
+            >
+              <h3 className="text-2xl font-bold text-white mb-6 font-montserrat">Advanced Technology Stack</h3>
+              <div className="space-y-4">
+                <div className="flex items-start space-x-4">
+                  <div className="w-8 h-8 bg-gradient-to-br from-cyan-500 to-blue-600 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      strokeWidth="2"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      className="text-white"
+                    >
+                      <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10" />
+                    </svg>
+                  </div>
+                  <div>
+                    <h4 className="text-white font-semibold mb-1 font-spaceGrotesk">Blockchain Security</h4>
+                    <p className="text-gray-300 text-sm">
+                      Every transaction is secured with blockchain technology ensuring complete transparency and
+                      immutability.
+                    </p>
+                  </div>
+                </div>
+                <div className="flex items-start space-x-4">
+                  <div className="w-8 h-8 bg-gradient-to-br from-purple-500 to-pink-600 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      strokeWidth="2"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      className="text-white"
+                    >
+                      <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z" />
+                    </svg>
+                  </div>
+                  <div>
+                    <h4 className="text-white font-semibold mb-1 font-spaceGrotesk">Lightning Fast Processing</h4>
+                    <p className="text-gray-300 text-sm">
+                      Our cloud infrastructure processes tickets and payouts in milliseconds, not minutes.
+                    </p>
+                  </div>
+                </div>
+                <div className="flex items-start space-x-4">
+                  <div className="w-8 h-8 bg-gradient-to-br from-green-500 to-emerald-600 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      strokeWidth="2"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      className="text-white"
+                    >
+                      <path d="M9 12l2 2 4-4" />
+                      <path d="M21 12c.552 0 1-.448 1-1V5c0-.552-.448-1-1-1H3c-.552 0-1 .448-1 1v6c0 .552.448 1 1 1" />
+                    </svg>
+                  </div>
+                  <div>
+                    <h4 className="text-white font-semibold mb-1 font-spaceGrotesk">AI-Powered Analytics</h4>
+                    <p className="text-gray-300 text-sm">
+                      Smart algorithms provide personalized insights and responsible gaming recommendations.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </motion.div>
+
+            <motion.div
+              initial={{ opacity: 0, x: 20 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.5 }}
+              viewport={{ once: true }}
+              className="relative"
+            >
+              <div className="absolute -inset-1 bg-gradient-to-r from-pink-500 via-purple-500 to-cyan-500 rounded-2xl blur-xl opacity-70"></div>
+              <div className="relative bg-gradient-to-br from-gray-900 to-purple-900/50 p-8 rounded-xl border border-gray-800">
+                <div className="grid grid-cols-2 gap-6">
+                  <div className="text-center">
+                    <div className="text-3xl font-bold text-cyan-400 mb-2 font-spaceGrotesk">99.9%</div>
+                    <div className="text-gray-300 text-sm">Uptime Guarantee</div>
+                  </div>
+                  <div className="text-center">
+                    <div className="text-3xl font-bold text-green-400 mb-2 font-spaceGrotesk">&lt;1s</div>
+                    <div className="text-gray-300 text-sm">Transaction Speed</div>
+                  </div>
+                  <div className="text-center">
+                    <div className="text-3xl font-bold text-purple-400 mb-2 font-spaceGrotesk">256-bit</div>
+                    <div className="text-gray-300 text-sm">SSL Encryption</div>
+                  </div>
+                  <div className="text-center">
+                    <div className="text-3xl font-bold text-pink-400 mb-2 font-spaceGrotesk">24/7</div>
+                    <div className="text-gray-300 text-sm">Live Monitoring</div>
+                  </div>
+                </div>
+              </div>
+            </motion.div>
+          </div>
+
+          <div className="grid md:grid-cols-3 gap-8">
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 0.1 }}
               viewport={{ once: true }}
-              className="bg-gradient-to-br from-green-900/30 to-emerald-900/30 p-6 rounded-xl border border-green-800/30 backdrop-blur-sm text-center"
+              className="bg-gradient-to-br from-gray-900 to-purple-900/30 p-6 rounded-xl border border-purple-800/30 backdrop-blur-sm text-center group hover:scale-105 transition-transform duration-300"
             >
-              <div className="text-3xl font-bold text-green-400 mb-2 font-spaceGrotesk">$107M</div>
-              <div className="text-gray-300">Largest Single Win</div>
-              <div className="text-sm text-gray-400 mt-1 font-spaceGrotesk">January 2019</div>
+              <div className="w-16 h-16 bg-gradient-to-br from-blue-500 to-cyan-600 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:rotate-12 transition-transform duration-300">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  className="text-white"
+                >
+                  <rect width="18" height="11" x="3" y="11" rx="2" ry="2" />
+                  <path d="m7 11V7a5 5 0 0 1 10 0v4" />
+                </svg>
+              </div>
+              <h3 className="text-xl font-bold text-white mb-2 font-montserrat">Multi-Layer Security</h3>
+              <p className="text-gray-300">
+                Bank-grade security with biometric authentication, two-factor verification, and real-time fraud
+                detection protecting every transaction.
+              </p>
             </motion.div>
 
             <motion.div
@@ -455,11 +597,29 @@ export default function Home() {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 0.2 }}
               viewport={{ once: true }}
-              className="bg-gradient-to-br from-blue-900/30 to-cyan-900/30 p-6 rounded-xl border border-blue-800/30 backdrop-blur-sm text-center"
+              className="bg-gradient-to-br from-gray-900 to-purple-900/30 p-6 rounded-xl border border-purple-800/30 backdrop-blur-sm text-center group hover:scale-105 transition-transform duration-300"
             >
-              <div className="text-3xl font-bold text-blue-400 mb-2 font-spaceGrotesk">$150M</div>
-              <div className="text-gray-300">Total Paid Out</div>
-              <div className="text-sm text-gray-400 mt-1 font-spaceGrotesk">This Year</div>
+              <div className="w-16 h-16 bg-gradient-to-br from-purple-500 to-pink-600 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:rotate-12 transition-transform duration-300">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  className="text-white"
+                >
+                  <path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6" />
+                </svg>
+              </div>
+              <h3 className="text-xl font-bold text-white mb-2 font-montserrat">Instant Payouts</h3>
+              <p className="text-gray-300">
+                Automated smart contracts ensure winnings are transferred to your account instantly upon verification -
+                no waiting periods or delays.
+              </p>
             </motion.div>
 
             <motion.div
@@ -467,25 +627,53 @@ export default function Home() {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 0.3 }}
               viewport={{ once: true }}
-              className="bg-gradient-to-br from-purple-900/30 to-pink-900/30 p-6 rounded-xl border border-purple-800/30 backdrop-blur-sm text-center"
+              className="bg-gradient-to-br from-gray-900 to-purple-900/30 p-6 rounded-xl border border-purple-800/30 backdrop-blur-sm text-center group hover:scale-105 transition-transform duration-300"
             >
-              <div className="text-3xl font-bold text-purple-400 mb-2 font-spaceGrotesk">2,847</div>
-              <div className="text-gray-300">Winners This Year</div>
-              <div className="text-sm text-gray-400 mt-1 font-spaceGrotesk">All Divisions</div>
-            </motion.div>
-
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5, delay: 0.4 }}
-              viewport={{ once: true }}
-              className="bg-gradient-to-br from-orange-900/30 to-red-900/30 p-6 rounded-xl border border-orange-800/30 backdrop-blur-sm text-center"
-            >
-              <div className="text-3xl font-bold text-orange-400 mb-2 font-spaceGrotesk">52</div>
-              <div className="text-gray-300">Jackpot Winners</div>
-              <div className="text-sm text-gray-400 mt-1 font-spaceGrotesk">All Time</div>
+              <div className="w-16 h-16 bg-gradient-to-br from-green-500 to-emerald-600 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:rotate-12 transition-transform duration-300">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  className="text-white"
+                >
+                  <path d="M12 2L2 7l10 5 10-5M2 17l10 5 10-5M2 12l10 5 10-5" />
+                </svg>
+              </div>
+              <h3 className="text-xl font-bold text-white mb-2 font-montserrat">Cross-Platform Sync</h3>
+              <p className="text-gray-300">
+                Seamlessly switch between desktop, mobile, and tablet with real-time synchronization of your tickets,
+                history, and preferences.
+              </p>
             </motion.div>
           </div>
+
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, delay: 0.4 }}
+            viewport={{ once: true }}
+            className="mt-12 text-center"
+          >
+            <div className="bg-gradient-to-r from-gray-900 to-purple-900/30 p-8 rounded-2xl border border-purple-800/30 backdrop-blur-sm">
+              <h3 className="text-2xl font-bold text-white mb-4 font-montserrat">Experience the Difference</h3>
+              <p className="text-gray-300 text-lg mb-6 max-w-3xl mx-auto">
+                Our platform isn't just another lottery website - it's a complete ecosystem built for the modern lottery
+                player. With cutting-edge technology, unmatched security, and user-centric design, we're redefining what
+                online lottery should be.
+              </p>
+              <Link href="/signup">
+                <Button className="px-8 py-4 text-lg bg-gradient-to-r from-pink-500 to-cyan-500 hover:from-pink-600 hover:to-cyan-600 text-white font-spaceGrotesk">
+                  Try Our Platform Today
+                </Button>
+              </Link>
+            </div>
+          </motion.div>
         </div>
       </section>
 
@@ -572,143 +760,12 @@ export default function Home() {
                   </div>
                   <h4 className="text-white font-semibold mb-2 font-spaceGrotesk">Set Limits</h4>
                   <p className="text-gray-400 text-sm font-spaceGrotesk">
-                    Use our built-in spending limit tools to control your lottery budget
+                    Use our built-in spending limit tools to control your lottery budget.
                   </p>
                 </motion.div>
-
-                <motion.div
-                  initial={{ opacity: 0, y: 20 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  transition={{ duration: 0.5, delay: 0.2 }}
-                  viewport={{ once: true }}
-                  className="bg-gray-800/50 p-4 rounded-lg text-center"
-                >
-                  <div className="w-12 h-12 bg-gradient-to-br from-purple-500 to-pink-600 rounded-full flex items-center justify-center mx-auto mb-3 text-white">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="20"
-                      height="20"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      stroke="currentColor"
-                      strokeWidth="2"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                    >
-                      <circle cx="12" cy="12" r="10"></circle>
-                      <path d="M12 6v6l4 2"></path>
-                    </svg>
-                  </div>
-                  <h4 className="text-white font-semibold mb-2 font-spaceGrotesk">Take Breaks</h4>
-                  <p className="text-gray-400 text-sm font-spaceGrotesk">
-                    Self-exclusion options available for temporary or permanent breaks
-                  </p>
-                </motion.div>
-
-                <motion.div
-                  initial={{ opacity: 0, y: 20 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  transition={{ duration: 0.5, delay: 0.3 }}
-                  viewport={{ once: true }}
-                  className="bg-gray-800/50 p-4 rounded-lg text-center"
-                >
-                  <div className="w-12 h-12 bg-gradient-to-br from-green-500 to-emerald-600 rounded-full flex items-center justify-center mx-auto mb-3 text-white">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="20"
-                      height="20"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      stroke="currentColor"
-                      strokeWidth="2"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                    >
-                      <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
-                      <circle cx="12" cy="7" r="4"></circle>
-                    </svg>
-                  </div>
-                  <h4 className="text-white font-semibold mb-2 font-spaceGrotesk">Get Help</h4>
-                  <p className="text-gray-400 text-sm font-spaceGrotesk">
-                    Free confidential support available 24/7 from trained professionals
-                  </p>
-                </motion.div>
-              </div>
-
-              <div className="mt-8 p-4 bg-gray-800/30 rounded-lg">
-                <h4 className="text-white font-semibold mb-3 text-center font-spaceGrotesk">Need Support?</h4>
-                <div className="grid grid-cols-2 md:grid-cols-4 gap-3 text-center">
-                  <a
-                    href="https://gamblershelp.com.au"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-cyan-400 hover:text-cyan-300 text-sm underline font-spaceGrotesk"
-                  >
-                    Gambler's Help Victoria
-                  </a>
-                  <a
-                    href="https://www.gamcare.org.uk"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-cyan-400 hover:text-cyan-300 text-sm underline font-spaceGrotesk"
-                  >
-                    GamCare
-                  </a>
-                  <a
-                    href="https://www.begambleaware.org"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-cyan-400 hover:text-cyan-300 text-sm underline font-spaceGrotesk"
-                  >
-                    BeGambleAware
-                  </a>
-                  <a
-                    href="https://www.vic.gov.au"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-cyan-400 hover:text-cyan-300 text-sm underline font-spaceGrotesk"
-                  >
-                    Government Victoria
-                  </a>
-                </div>
               </div>
             </motion.div>
           </div>
-        </div>
-      </section>
-
-      {/* CTA Section */}
-      <section className="py-16">
-        <div className="container mx-auto px-4">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5 }}
-            viewport={{ once: true }}
-            className="text-center bg-gradient-to-br from-gray-900 to-purple-900/30 p-12 rounded-2xl border border-purple-800/30 backdrop-blur-sm"
-          >
-            <h2 className="text-3xl md:text-4xl font-bold mb-4 bg-clip-text text-transparent bg-gradient-to-r from-pink-500 via-purple-500 to-cyan-500 font-montserrat">
-              Ready to Win Big?
-            </h2>
-            <p className="text-xl text-gray-300 mb-8 max-w-2xl mx-auto font-spaceGrotesk">
-              Join thousands of winners and start your lottery journey today. The next jackpot could be yours!
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Link href="/signup">
-                <Button className="px-8 py-6 text-lg bg-gradient-to-r from-pink-500 to-cyan-500 hover:from-pink-600 hover:to-cyan-600 text-white font-spaceGrotesk">
-                  Sign Up Now
-                </Button>
-              </Link>
-              <Link href="/lotteries">
-                <Button
-                  variant="outline"
-                  className="px-8 py-6 text-lg border-gray-600 text-gray-300 hover:bg-gray-800 font-spaceGrotesk"
-                >
-                  Learn More
-                </Button>
-              </Link>
-            </div>
-          </motion.div>
         </div>
       </section>
     </div>
