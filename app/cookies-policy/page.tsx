@@ -153,24 +153,6 @@ export default function CookiesPolicyPage() {
               </p>
             </div>
           </motion.section>
-
-          <motion.section
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5, delay: 0.6 }}
-            viewport={{ once: true }}
-            className="mb-8"
-          >
-            <h2 className="text-2xl font-bold text-white mb-4">Contact Us</h2>
-            <div className="text-gray-300 space-y-4">
-              <p>If you have any questions about our use of cookies, please contact us at:</p>
-              <div className="bg-gray-800/50 p-4 rounded-lg">
-                <p>Email: privacy@bigsweetdream.com</p>
-                <p>Phone: 1800 LOTTERY</p>
-                <p>Address: Sydney, NSW, Australia</p>
-              </div>
-            </div>
-          </motion.section>
         </div>
       </div>
     </div>
